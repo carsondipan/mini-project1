@@ -1,1 +1,38 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="'https://www.loc.gov/search/?q=' + q + '&fo=json';">
+    <link href="'https://www.loc.gov/search/?q=' + q + '&fo=json';">
+    <title>Library of Congress Search Home</title>
+</head>
+<body>
+    <div class="col-12 col-md-4 min-vh-100">
+        <form>
+          <fieldset enabled>
+            <legend>Library of Congress Search</legend>
+            <div class="mb-3">
+              <label for="textInput" class="form-label">Search</label>
+              <input type="text" id="textInput" class="form-control" placeholder="Search Library of Congress">
+            </div>
+            <div class="mb-3">
+              <label for="dataTypes" class="form-label">Select Type</label>
+              <select id="dropdown" class="form-select">
+                <option value = "maps">Maps</option>
+                <option value = "audio">Audio</option>
+                <option value = "photos">Photos</option>
+                <option value = "manuscripts">Manuscripts</option>
+                <option value = "newspapers">Newspapers</option>
+                <option value = "video">Film and Videos</option>
+                <option value = "music">Notated Music</option>
+                <option value = "websites">Websites</option>
+              </select>
+            </div>
+            <button id = "submitBtn" type="submit" class="btn btn-primary">Submit</button>
+          </fieldset>
+        </form>
+      </div>
+</body>
+</html>
